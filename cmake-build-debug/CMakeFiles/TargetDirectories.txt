@@ -1,3 +1,0 @@
-C:/Users/Usuario/Desktop/EPN/CARRERA COMPUTACION/PRIMER SEMESTRE/PROGRAMACION/SEMANA 13/Versha/cmake-build-debug/CMakeFiles/Versha.dir
-C:/Users/Usuario/Desktop/EPN/CARRERA COMPUTACION/PRIMER SEMESTRE/PROGRAMACION/SEMANA 13/Versha/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Usuario/Desktop/EPN/CARRERA COMPUTACION/PRIMER SEMESTRE/PROGRAMACION/SEMANA 13/Versha/cmake-build-debug/CMakeFiles/rebuild_cache.dir
