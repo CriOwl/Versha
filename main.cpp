@@ -81,7 +81,7 @@ void partida(int id_p) {
 int comodines(int tipo,int pregunta,int id_) {
     int opcion_random;
     string opcion;
-    char opcion_co=preguntas_juego[pregunta].opcion_correcta;
+    string opcion_co=preguntas_juego[pregunta].opcion_correcta;
     switch (tipo) {
         case 1: {//Llamada al publico
             cout<<"LLamando a un experto ..."<<endl;
@@ -90,16 +90,16 @@ int comodines(int tipo,int pregunta,int id_) {
         case 2: {
             //Graficos en ascii con casos
             switch (opcion_co) {
-                case 'a': {
+                case "a": {
 
                 }
-                case 'b': {
+                case "b": {
 
                 }
-                case 'c': {
+                case "c": {
 
                 }
-                case 'd': {
+                case "d": {
 
                 }
             }
