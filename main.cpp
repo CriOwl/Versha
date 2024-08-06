@@ -3,6 +3,7 @@
 #include <windows.h>
 
 using namespace std;
+
 struct player{
     string player_name="Versha";
     int score=0;
@@ -54,8 +55,17 @@ void creditos() {
     system("cls");
 }
 
-void errores() {
-
+char errores(char option) {
+    //isalpha valida si el dato ingresado es una letra
+    if(isalpha(char option)){
+        cout<<" Opción invalida, por favor ingrese un numero."<<endl;
+        system("pause");
+        system("cls");
+    }else{
+        cout<<" Ingrese un número dentro de las opciones"<<endl;
+        system("pause");
+        system("cls");
+    }
 }
 
 void Registro_datos(int id) {
@@ -64,7 +74,7 @@ void Registro_datos(int id) {
     jugadores[id].id_player = id;
 }
 void menu() {
-    int option;
+    char option;
     int id=0;
     do {
         cout << "1.Nueva Partida";
@@ -101,7 +111,7 @@ void menu() {
                 break;
             }
             default: {
-                errores();
+                errores(option);
             }
         }
     } while (option!=5);
