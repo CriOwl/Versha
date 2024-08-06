@@ -79,5 +79,6 @@ void menu() {
 int main()
 {
     menu();
+    cout<<"hola"<<endl;
     return 0;
 }
