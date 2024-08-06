@@ -328,7 +328,7 @@ void AnimacionPuntaje(){
 
     system("pause");
     system("cls");
-    MostrarMenu();
+    menu();
 }
 
 
@@ -349,7 +349,7 @@ void MostrarCreditos(){
 
     system("pause");
     system("cls");
-    MostrarMenu();
+    menu();
 }
 
 
@@ -369,7 +369,7 @@ void MostrarPuntaje(){
 
     system("pause");
     system("cls");
-    MostrarMenu();
+    menu();
 
 }
 
@@ -529,16 +529,28 @@ int comodines(int tipo,int pregunta,int id_) {
         }
     }
 }
+
 void menu() {
-    int option;
+    char option;
     int id = 0;
+    //poner acento a la palabra
+    char wordo = 162;
+    char worde = 130;
+    char worda = 160;
+    char wordu = 163;
+    
     do {
-        cout << "1.Nueva Partida";
-        cout << "\n2.Creditos";
-        cout << "\n3.Puntajes";
-        cout << "\n4.Salir";
-        cout << "\nEscoga una opcion:";
-        cin >> option;
+        system("cls");
+        LogoMenu();
+        cout<<"\t------------------------------------------------------------------ "<<endl;
+        cout<<"\t|               1.- Nueva partida                                | "<<endl;
+        cout<<"\t|               2.- Cr"<<worde<<"ditos                                     | "<<endl;
+        cout<<"\t|               3.- Puntajes                                               | "<<endl;
+        cout<<"\t|               4.- Salir                                        | "<<endl;
+        cout<<"\t------------------------------------------------------------------ "<<endl;
+        cout<<"\t------------------------------------------------------------------ "<<endl;
+        cout<<"\t Ingrese opci"<<wordo<<"n: ",cin>>opcion;
+        
         switch (option) {
             case 1: {
                 Registro_datos(id);
@@ -547,15 +559,23 @@ void menu() {
                 break;
             }
             case 2: {
+                system("cls");
+                MostrarCreditos();
                 break;
             }
             case 3: {
+                
                 break;
             }
             case 4: {
+                system("cls");
+                SalirJuego();
                 break;
             }
             default: {
+                cout<<"\t Opci"<<wordo<<"n no v"<<worda<<"lida..."<<endl;
+                system("pause");
+                break;
             }
         }
     } while (option != 4);
