@@ -55,9 +55,9 @@ void creditos() {
     system("cls");
 }
 
-char errores(char option) {
+void errores(char option) {
     //isalpha valida si el dato ingresado es una letra
-    if(isalpha(char option)){
+    if(isalpha( option)){
         cout<<" Opción invalida, por favor ingrese un numero."<<endl;
         system("pause");
         system("cls");
@@ -77,13 +77,13 @@ void menu() {
     char option;
     int id=0;
     do {
-        cout << "1.Nueva Partida";
-        cout << "\n2.Continuar una Partida";
-        cout << "\n3.Creditos";
-        cout << "\n4.Puntajes";
-        cout << "\n5.Salir";
-        cout << "\nEscoga una opcion:";
-        cin >> option;
+        system("cls");
+        cout << "\n 1.Nueva Partida";
+        cout << "\n 2.Continuar una Partida";
+        cout << "\n 3.Creditos";
+        cout << "\n 4.Puntajes";
+        cout << "\n 5.Salir";
+        cout << "\n Escoga una opcion: ", cin >> option;
         switch (option) {
             case 1: {
                 Registro_datos(id);
@@ -112,6 +112,7 @@ void menu() {
             }
             default: {
                 errores(option);
+                break;
             }
         }
     } while (option!=5);
