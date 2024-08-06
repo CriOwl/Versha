@@ -26,8 +26,9 @@ void salir() {
 void creditos() {
 
 }
+void errores() {
 
-
+}
 void Registro_datos(int id) {
     cout << "Ingreso del apodo del jugador " << id + 1 << ": ";
     cin >> jugadores[id].player_name;
@@ -37,7 +38,7 @@ void menu() {
     int option;
     int id=0;
     do {
-        cout << "\n1.Nueva Partida";
+        cout << "1.Nueva Partida";
         cout << "\n2.Continuar una Partida";
         cout << "\n3.Creditos";
         cout << "\n4.Puntajes";
@@ -70,7 +71,7 @@ void menu() {
                 break;
             }
             default: {
-                cout<<"Escoga una opcion entre 1 y 4"<<endl;
+                errores(2);
             }
         }
     } while (option!=5);
