@@ -32,6 +32,9 @@ void salir() {
         <<".##....##.##.....##.##........##..##.......##...###.##.....##.##.....## \n"
         <<"..######..##.....##.########.####.########.##....##.########...#######. \n"
         <<"\n";
+    cout<<"\t\t Gracias por jugar"<<endl;
+    Sleep(2000);
+    exit(1);
 }
 
 //Funcion para mostrar los créditos
@@ -78,14 +81,15 @@ void menu() {
                 break;
             }
             case 2: {
-                if(id == 0) {
+                if(id == 0){
                     cout<<"Primero cree una partida"<<endl;
                 }else {
                     partidas();
                 }
                 break;
             }
-            case 3: {creditos();
+            case 3: {
+                creditos();
                 break;
             }
             case 4: {
