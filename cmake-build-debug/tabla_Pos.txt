@@ -1,2 +1,1 @@
-
-Jugador: asdasdasd  Puntuacion: 1000
+Jugador: testsetset  Puntuacion: 4000
