@@ -1,1 +1,2 @@
-Jugador: 15  Puntuacion: 
+
+Jugador: asdasdasd  Puntuacion: 1000
